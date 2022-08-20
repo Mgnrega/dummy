@@ -1,10 +1,10 @@
-from flask import Flask , render_template , request , redirect ,flash
+from flask import Flask
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 @app.route("/" , methods=['GET' , 'POST'])
 def faceDetection():
     return "Works"
 
-if _name_ == "_main_" :
+if __name__ == "_main_" :
     app.run(debug= True)
